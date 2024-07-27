@@ -25,9 +25,9 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-   min-height:100vh; 
    background-color:#252527;
    display:flex;
+   height:1024px;
 `
 
 const Photo = styled.img`
