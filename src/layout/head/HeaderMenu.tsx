@@ -32,6 +32,7 @@ const StyledHeaderMenu= styled.nav`
     display: flex;
     gap: 30px;
     justify-content:center;
+    outline: none;
   }
 `;
 
@@ -51,7 +52,7 @@ const Mask = styled.span `
     display:inline-block;
     height:50%;
     overflow:hidden;
-    /* outline: 1px solid red; */
+    /* outline: 1px solid green; */
     color:${theme.colors.accent};
     & + & {
         top:50%;
