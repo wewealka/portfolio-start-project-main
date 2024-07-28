@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "src/components/Menu.tsx"  ]
+, "src/layout/section/works/work/TabMenu.tsx"  ]
 }

@@ -18,7 +18,6 @@ export const Contact =() => {
 };
 
 const StyledContact=styled.section`
-background-color:#aeb9ff;
 
 `;
 

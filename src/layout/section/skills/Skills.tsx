@@ -23,7 +23,7 @@ export const Skills = () => {
                               title="TYPESCRIPT"
                               description={"Proficient in TypeScript, a statically typed superset of JavaScript, with the ability to apply types, interfaces, classes, and other OOP concepts to build reliable and scalable applications. Knowledgeable about TypeScript's syntax, static typing, and developer tools."} />
                          <Skill iconId={"StyledComponets"}
-                              title="STYLED COMONENTS"
+                              title="STYLED COMPONENTS"
                               description={"Ability to create modular, reusable, and dynamic component-level styles using tagged template literals. Knowledge of Styled Components' APIs for styles, props, and theming. Experience integrating it with React projects, leveraging benefits like automatic vendor prefixing and easy composition."} />
                          <Skill iconId={"WD"}
                               title="WEB DESING"

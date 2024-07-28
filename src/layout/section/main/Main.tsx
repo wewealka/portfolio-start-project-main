@@ -25,7 +25,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-   background-color:#252527;
+   background-color:#1F1F20;
    display:flex;
    height:1024px;
 `
