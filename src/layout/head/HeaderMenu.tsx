@@ -34,6 +34,9 @@ const StyledHeaderMenu= styled.nav`
     justify-content:center;
     outline: none;
   }
+  @media ${theme.media.tablet} {
+    display:none;
+  }
 `;
 
 const Link = styled.a`

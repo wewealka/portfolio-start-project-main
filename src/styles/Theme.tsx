@@ -7,5 +7,11 @@ export const theme = {
         font: "#ffffff",
         placeholderColor: "#495057",
         borderColor: "#4A4A4A"
-    }
+    },
+
+    media: {
+        desktop:"(min-width: 768px)",
+        tablet: "(max-width: 768px)",
+        mobile: "(max-width: 576px)",
+      },
 };
