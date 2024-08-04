@@ -33,9 +33,9 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledMobileMenu = styled.nav`
-
-  @media ${theme.media.desktop} {
     display:none;
+  @media ${theme.media.tablet} {
+    display:block;
   }
 `;
 
