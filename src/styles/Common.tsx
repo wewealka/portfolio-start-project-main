@@ -14,6 +14,6 @@ export const font = ({family, weight, color, lineHeight, Fmin, Fmax}:FontPropsTy
     font-weight: ${weight || 400 };
     color: ${color || theme.colors.font};
     lineHeight: ${lineHeight || 1.2};
-     font-size: clamp(${Fmin}px, calc(${Fmin}px + (${Fmax} - ${Fmin}) * ((100vw - 360px) / (1440 - 360))), ${Fmax}px);
+    font-size: clamp(${Fmin}px, calc(${Fmin}px + (${Fmax} - ${Fmin}) * ((100vw - 360px) / (1440 - 360))), ${Fmax}px);
     `
-    
+
