@@ -42,7 +42,7 @@ export const Footer =()=> {
 };
 
 const StyledFooter = styled.footer`
-    background-color:${theme.colors.primaryBg};
+    background-color:${theme.colors.secondaryBg};
     padding:40px 0;
 `;
 
@@ -85,5 +85,4 @@ const Copyright = styled.small`
 `;
 
 const SocialItem = styled.li`
-
 `;
