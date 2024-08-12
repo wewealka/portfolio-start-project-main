@@ -10,6 +10,21 @@ import { Container } from "../../../components/Container";
 
 
 const worksItems = ["All", "LANDING PAGE", "REACT", "SPA"]
+
+const WorkData = [
+    {
+        title: "SocialNetwork",
+        src: socialImg,
+        text:"In the near future, there will be my works there."
+    },
+
+    {
+        title: "Timer",
+        src: timer,
+        text:"In the near future, there will be my works there."
+    }
+]
+
 export const Works = () => {
     return (
         <StyledWorks>
@@ -17,13 +32,13 @@ export const Works = () => {
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={worksItems} />
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
-                    <Work title={"SocialNetwork"}
-                        src={socialImg}
-                        text={"In the near future, there will be my works there."} />
 
-                    <Work title={"Timer"}
-                        src={timer}
-                        text={"In the near future, there will be my works there."} />
+                    {WorkData.map((w)=> {
+                        return <Work title={w.title}
+                                src={w.src}
+                                text={w.text} />
+                    })}
+                    
                 </FlexWrapper>
             </Container>
         </StyledWorks>
