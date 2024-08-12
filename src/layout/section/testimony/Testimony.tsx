@@ -4,7 +4,7 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Icon } from "../../../components/Icon/Icon";
 import { Slider } from "../../../components/slider/Slider";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { IconWrapper } from "../skilladding/Skill";
+import { IconWrapper } from "../skills/skilladding/Skill";
 import { Container } from "../../../components/Container";
 
 export const Testimony = () => {

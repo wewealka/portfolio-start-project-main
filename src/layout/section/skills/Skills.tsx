@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
-import { Skill } from "../skilladding/Skill";
+import { Skill } from "./skilladding/Skill";
 import { Container } from "../../../components/Container";
 
 export const Skills = () => {
