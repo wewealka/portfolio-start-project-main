@@ -1,88 +1,45 @@
-import React from "react";
-import styled from "styled-components";
+import { S } from "./FooterStyles";
 import { Icon } from "../../components/Icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { theme } from "../../styles/Theme";
-import { font } from "../../styles/Common";
+
+
+const socialItemsData = [
+    {
+        iconId:"Instagram"
+    },
+
+    {
+        iconId:"Telegram"
+    },
+
+    {
+        iconId:"VK"
+    },
+
+    {
+        iconId:"IN"
+    },
+]
 
 export const Footer =()=> {
     return(
-        <StyledFooter>
+        <S.Footer>
             <FlexWrapper direction={"column"} align={"center"}>
-            <Name>Vladimir</Name>
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"Instagram"}/>
-                        </SocialLink>
-                </SocialItem>
-                
-                <SocialItem>
-                    <SocialLink>
-                        <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"Telegram"}/>
-                    </SocialLink>
-                </SocialItem>
+            <S.Name>Vladimir</S.Name>
 
-                <SocialItem>
-                    <SocialLink>
-                        <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"VK"}/>
-                    </SocialLink>
-                </SocialItem>
+            {socialItemsData.map ((s, index)=>{
+                return (
+                        <S.SocialItem key={index}>
+                            <S.SocialLink>
+                                     <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={s.iconId}/>
+                            </S.SocialLink>
+                        </S.SocialItem>
+                        )
+            })}
 
-                <SocialItem>
-                    <SocialLink>
-                        <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId={"IN"}/>
-                    </SocialLink>
-                </SocialItem>
-            </SocialList>
-            <Copyright>© 2023 Vladimir Razumovich, All Rights Reserved.</Copyright>
+            <S.Copyright>© 2023 Vladimir Razumovich, All Rights Reserved.</S.Copyright>
             </FlexWrapper>
-        </StyledFooter>
+        </S.Footer>
     );
 };
 
-const StyledFooter = styled.footer`
-    background-color:${theme.colors.secondaryBg};
-    padding:40px 0;
-`;
-
-const Name = styled.span`
-    ${font({family: "'Josefin Sans',sans-serif",weight: 700, Fmax:22, Fmin:16})}
-    letter-spacing: 3px;
-
-
-`;
-
-const SocialList = styled.ul`
-    display:flex;
-    gap:20px;
-    margin:30px 0;
-`;
-
-const SocialLink = styled.a`
-    background-color:rgba(255,255,255,0.1);
-    border-radius: 50%;
-    width:35px;
-    height:35px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    color:${theme.colors.accent};
-
-    &:hover {
-        color:${theme.colors.primaryBg};
-        transform: translateY(-4px);
-    }
-`;
-
-const Copyright = styled.small`
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    opacity:0.5;
-`;
-
-const SocialItem = styled.li`
-`;
