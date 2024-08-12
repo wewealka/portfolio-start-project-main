@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { TabMenu } from "./work/TabMenu";
 import { FlexWrapper } from "../../../components/FlexWrapper";
@@ -6,6 +5,7 @@ import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/proj1.webp"
 import timer from "../../../assets/images/proj2.webp"
 import { Container } from "../../../components/Container";
+import { S } from "./worksStyles/WorksStyles";
 
 
 
@@ -27,7 +27,7 @@ const WorkData = [
 
 export const Works = () => {
     return (
-        <StyledWorks>
+        <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={worksItems} />
@@ -38,15 +38,10 @@ export const Works = () => {
                                 src={w.src}
                                 text={w.text} />
                     })}
-                    
+
                 </FlexWrapper>
             </Container>
-        </StyledWorks>
+        </S.Works>
     );
 };
 
-const StyledWorks = styled.section`
-    ${FlexWrapper} {
-        gap:30px;
-    }
-`
