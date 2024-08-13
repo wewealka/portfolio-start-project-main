@@ -19,6 +19,7 @@ const SocialList = styled.ul`
     display:flex;
     gap:20px;
     margin:30px 0;
+    
 `;
 
 const SocialLink = styled.a`
@@ -47,6 +48,7 @@ const Copyright = styled.small`
 `;
 
 const SocialItem = styled.li`
+    
 `;
 
 export const S = {

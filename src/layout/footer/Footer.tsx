@@ -1,6 +1,7 @@
 import { S } from "./FooterStyles";
 import { Icon } from "../../components/Icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import React from "react";
 
 
 const socialItemsData = [
@@ -21,12 +22,12 @@ const socialItemsData = [
     },
 ]
 
-export const Footer =()=> {
+export const Footer:React.FC =()=> {
     return(
         <S.Footer>
             <FlexWrapper direction={"column"} align={"center"}>
             <S.Name>Vladimir</S.Name>
-
+                <S.SocialList>
             {socialItemsData.map ((s, index)=>{
                 return (
                         <S.SocialItem key={index}>
@@ -36,7 +37,7 @@ export const Footer =()=> {
                         </S.SocialItem>
                         )
             })}
-
+                </S.SocialList>
             <S.Copyright>© 2023 Vladimir Razumovich, All Rights Reserved.</S.Copyright>
             </FlexWrapper>
         </S.Footer>
