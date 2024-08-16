@@ -45,7 +45,10 @@ const Photo = styled.img`
 
 const MainTitle = styled.h1`
     text-align: left;
-    ${font({family:"'Josefin Sans',sans-serif", weight:400, Fmax: 27, Fmin:20 })}
+    ${font({family:"'Josefin Sans',sans-serif", weight:400, Fmax: 27, Fmin:20 })};
+    p {
+        display:none;
+    }
 `
 
 const Name = styled.h2`
