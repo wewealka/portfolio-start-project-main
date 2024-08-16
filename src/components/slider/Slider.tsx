@@ -31,6 +31,7 @@ const items = [
   export const Slider = () => (
     <S.Slider>
       <AliceCarousel
+      infinite
       mouseTracking
       items= {items}
       />
