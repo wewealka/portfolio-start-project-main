@@ -4,6 +4,7 @@ import { theme } from "../../styles/Theme";
 
 const Slider = styled.div`
     max-width:500px;
+    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -33,6 +34,7 @@ const Pagination = styled.div`
     display: inline-block;
     width: 7px;
     height: 7px;
+    
     background-color:rgba(255,255,255,0.5);
     border-radius: 20px;
 
