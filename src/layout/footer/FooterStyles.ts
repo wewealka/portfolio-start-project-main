@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 
 const Footer = styled.footer`
+position:relative;
     background-color:${theme.colors.secondaryBg};
     padding:40px 0;
 `;

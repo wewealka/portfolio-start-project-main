@@ -2,7 +2,7 @@ import { theme } from "../../../styles/Theme";
 import styled from "styled-components";
 
 const Contact = styled.section`
-
+position:relative;
 `;
 
 
