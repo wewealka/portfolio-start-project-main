@@ -6,7 +6,7 @@ import { Button } from "../../../components/button/Button";
 
 export const Contact = () => {
   return (
-    <S.Contact>
+    <S.Contact id={"contact"}>
       <Container>
         <SectionTitle>Contact Me</SectionTitle>
         <S.Form>

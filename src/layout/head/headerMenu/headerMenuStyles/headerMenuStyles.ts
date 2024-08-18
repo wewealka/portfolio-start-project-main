@@ -1,14 +1,11 @@
+import { Link } from "react-scroll";
 import { theme } from "../../../../styles/Theme";
 import styled, { css } from 'styled-components';
 
 
 // Menu
-const Link = styled.a`
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    color:transparent;
+const MenuItem = styled.li`
+    position:relative;
     
 `
 
@@ -29,9 +26,13 @@ const Mask = styled.span `
     }
 `
 
+const NavLink = styled(Link)`
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color:transparent;
 
-const MenuItem = styled.li`
-    position:relative;
     &::before {
         content:"";
         display:inline-block;
@@ -45,7 +46,7 @@ const MenuItem = styled.li`
         transform:scale(0);
     }
 
-    &:hover{
+    &:hover, &.active{
 
         &::before {
             transform:scale(1);
@@ -60,7 +61,12 @@ const MenuItem = styled.li`
         }
         } 
     }
-`
+`;
+
+
+
+
+
 // Menu
 
 //***********************************************************************************************/
@@ -169,7 +175,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }> `
 
 
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     Mask,
     MobileMenu,
