@@ -14,10 +14,13 @@ export const Main: React.FC = () => {
                         <S.SmallText>Glad you could make it</S.SmallText>
                         <S.Name>I am <span>Vladimir Razumovich</span></S.Name>
                         <S.MainTitle>
-                            <p>A Web Developer.</p>
+                            <p>
+                                A Web Developer.
+                                A Frontend Dev.
+                            </p>
                             <Typewriter
                                 options={{
-                                    strings: ['A Web Developer.'],
+                                    strings: ['A Web Developer.', 'A Frontend Dev.'],
                                     autoStart: true,
                                     loop: true,
                                 }}
