@@ -8,11 +8,19 @@ const Slider = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
-    
+
 `;
 
 const Slide = styled.div`
     text-align:center;
+    
+    &:hover {
+  cursor: grab;
+}
+
+    &:active {
+  cursor: grabbing;
+}
 `;
 
 const Text = styled.p`
@@ -48,6 +56,8 @@ const Pagination = styled.div`
     }
   }
 `;
+
+
 
 export const S = {
     Slider,

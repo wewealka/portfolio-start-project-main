@@ -21,12 +21,16 @@ export const Link = styled.a<{active?:boolean}>`
     content:"";
     display: inline-block;
     background-color:${theme.colors.accent};
-
+    
     position:absolute;
     z-index: -1;
     bottom:5px;
     left:0;
     right:0;
+
+    height:0;
+    transition: ${theme.animations.transition};
+
     ${props => props.active && css<{active?:boolean}>`
     height:10px;
   `}
